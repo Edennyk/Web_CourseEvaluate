@@ -1,12 +1,12 @@
 # Web_CourseEvaluate
 
 ## Skills
-==========================================
+
 Node.js , Express.js , Mongodb , Javascript
 
 
 ## Screenshots
-============================================
+
 
 - index page (sign in and sign up)
 <img src = "https://user-images.githubusercontent.com/59883982/109905358-a61a8480-7c6c-11eb-8344-ac53165c598e.jpg">
