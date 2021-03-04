@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title><%= titlePage %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+
+
+    <main class="form-signin">
+       <!-- include navbar -->
+ <%- include('include/_navbar')%>
+ <!-- /include navbar -->
+      <br/>
+      <br/>
+      <h1>Make your comment</h1>
+      <p>Welcome, <%= studentObj.email %></p>
+      <form action="/makeComment" method="post">
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label">Course Code:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="courseCode">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label">Course Name:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="courseName">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label">Program:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="program">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label">Semester:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="semester">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label">Your Comments:</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" name="comment" placeholder="Leave a comment here" style="height: 200px"></textarea>
+          </div>
+        </div>
+        <button class="w-100 btn btn-lg btn-success" type="submit">Submit</button>
+      </form>
+      
+    </main>
+    
+  </body>
+</html>
