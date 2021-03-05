@@ -2,7 +2,7 @@
 
 ## Skills
 
-Node.js , Express.js , Mongodb , Javascript
+Node.js , Express.js , Mongodb , Javascript, Bootstrap
 
 
 ## Screenshots
